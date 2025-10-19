@@ -1,12 +1,47 @@
-# React + Vite
+# React Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my **personal portfolio website**, built using **React.js** and **Vite**.  
+This project showcases my skills, projects, and interests as a **Computer Science student** passionate about **Cybersecurity**, **DevOps**, and the integration of **AI-driven technologies** with cloud platforms.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## Expanding the ESLint configuration
+This portfolio is designed to serve as my professional online presence — where I share who I am, what I’ve learned, and what I build.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+It features:
+-  A brief introduction and background
+-  A list of my skills and technical expertise
+-  A projects section showcasing my work
+-  A contact section for collaboration or inquiries
+
+---
+
+## Tech Stack
+
+| Category | Tools Used |
+|-----------|-------------|
+| Frontend | React.js (with Vite) |
+| Styling | CSS3 / Tailwind CSS |
+| Routing & Navigation | React Router (if added) |
+| Deployment | GitHub Pages |
+| Version Control | Git & GitHub |
+
+---
+
+## Live Demo
+
+**Portfolio Link:**  
+ [https://Anzaamer.github.io/portfolio-react/](https://Anzaamer.github.io/portfolio-react/)
+
+---
+
+## Features
+
+-  **Modern UI** — clean and responsive design  
+-  **Fast Performance** using Vite  
+-  **Smooth Navigation** with smooth scroll effects  
+-  **Fully Responsive** — works on all screen sizes  
+-  **Contact Section** — allows visitors to reach out easily  
+
+
