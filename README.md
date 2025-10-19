@@ -22,8 +22,7 @@ It features:
 | Category | Tools Used |
 |-----------|-------------|
 | Frontend | React.js (with Vite) |
-| Styling | CSS3 / Tailwind CSS |
-| Routing & Navigation | React Router (if added) |
+| Styling | CSS3 |
 | Deployment | GitHub Pages |
 | Version Control | Git & GitHub |
 
