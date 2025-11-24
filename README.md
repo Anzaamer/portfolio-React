@@ -31,7 +31,7 @@ It features:
 ## Live Demo
 
 **Portfolio Link:**  
- [https://Anzaamer.github.io/portfolio-react/](https://Anzaamer.github.io/portfolio-react/)
+ [https://Anzaamer.github.io/portfolio-React/](https://Anzaamer.github.io/portfolio-React/)
 
 ---
 
