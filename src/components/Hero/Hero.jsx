@@ -13,7 +13,7 @@ const Hero = () => {
             <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink></div>
             <div className="hero-resume">
               <a
-                href={`${import.meta.env.BASE_URL}Anza-Amer-Resume.pdf`}
+                href={`${import.meta.env.BASE_URL}Anza Amer CV.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
