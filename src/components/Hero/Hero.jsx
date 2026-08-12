@@ -11,7 +11,15 @@ const Hero = () => {
         <p>Computer Science student skilled in HTML, CSS, JavaScript, and React, with projects including a Netflix clone and portfolio website, and proficient in Git and GitHub.</p>
         <div className="hero-action">
             <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink></div>
-            <div className="hero-resume">My Resume</div>
+            <div className="hero-resume">
+              <a
+                href={`${import.meta.env.BASE_URL}Anza-Amer-Resume.pdf`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                My Resume
+              </a>
+            </div>
         </div>
     </div>
   )
