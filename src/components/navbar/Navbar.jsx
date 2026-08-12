@@ -13,16 +13,21 @@ const menuRef = useRef();
 
 const openMenu = () => {
   menuRef.current.style.right = "0";
-}
+  document.querySelector(".nav-mob-open").style.display = "none";
+};
 
 const closeMenu = () => {
-  if (window.innerWidth <= 480) {
-    menuRef.current.style.right = "-100%";
-  } 
-  else {
-    menuRef.current.style.right = "-350px";
-  }
-}
+    menuRef.current.style.right = "-100%"; 
+    document.querySelector(".nav-mob-open").style.display = "block";
+};
+
+const handleMenuClick = (section) => {
+        setMenu(section);
+
+        if (window.innerWidth <= 768) {
+            closeMenu();
+        }
+};
 
   return (
     <div className='navbar'>
@@ -30,13 +35,62 @@ const closeMenu = () => {
       <img src={menu_open} onClick={openMenu} alt="" className='nav-mob-open'/>
       <ul ref={menuRef} className="nav-menu">
         <img src={menu_close} onClick={closeMenu} alt="" className="nav-mob-close" />
-        <li><AnchorLink className='anchor-link' href='#home'><p onClick={()=>setMenu("home")}>Home</p></AnchorLink>{menu==="home"?<img src={underline} alt=''/>:<></>}</li>
-        <li><AnchorLink className='anchor-link' offset={50} href='#about'><p onClick={()=>setMenu("about")}>About Me</p></AnchorLink>{menu==="about"?<img src={underline} alt=''/>:<></>}</li>
-        <li><AnchorLink className='anchor-link' offset={50} href='#services'><p onClick={()=>setMenu("services")}>Services</p></AnchorLink>{menu==="services"?<img src={underline} alt=''/>:<></>}</li>
-        <li><AnchorLink className='anchor-link' offset={50} href='#work'><p onClick={()=>setMenu("work")}>Portfolio</p></AnchorLink>{menu==="work"?<img src={underline} alt=''/>:<></>}</li>
-        <li><AnchorLink className='anchor-link' offset={50} href='#contact'><p onClick={()=>setMenu("contact")}>Contact</p></AnchorLink>{menu==="contact"?<img src={underline} alt=''/>:<></>}</li>
+        <li>
+          <a
+            className="anchor-link"
+            offset={50}
+            href="#home"
+            onClick={() => handleMenuClick("home")}
+          >
+            Home
+          </a>
+          {menu==="home"&&(<img src={underline} alt=''/>)}
+        </li>
+        <li>
+          <a 
+            className='anchor-link' 
+            offset={50} href='#about'
+            onClick={()=> handleMenuClick("about")}
+          >
+            About Me
+          </a>
+            {menu==="about" && (<img src={underline} alt=''/>)}
+          </li>
+        <li>
+          <a 
+            className='anchor-link' 
+            offset={50} 
+            href='#services'
+            onClick={()=> handleMenuClick("services")}
+          > 
+            Services
+          </a>
+          {menu==="services" && (<img src={underline} alt=''/>)}
+        </li>
+        <li>
+          <a 
+            className='anchor-link' 
+            offset={50} 
+            href='#work'
+            onClick={()=> handleMenuClick("work")}
+          >
+            Portfolio
+          </a>
+          {menu==="work" && (<img src={underline} alt=''/>)}
+        </li>
+        <li>
+          <a 
+            className='anchor-link' 
+            offset={50} 
+            href='#contact'
+            onClick={()=> handleMenuClick("contact")}
+          >
+              Contact
+          </a>
+            {menu==="contact" && (<img src={underline} alt=''/>)}
+        </li>
       </ul>
-      <div className="nav-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink></div>
+      <div className="nav-connect"><a className='anchor-link' offset={50} href='#contact'>Connect With Me</a></div>
     </div>
   )
 }
